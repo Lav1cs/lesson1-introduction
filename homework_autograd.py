@@ -14,6 +14,7 @@ print(y.grad)
 print(z.grad)
 
 #2.2
+import torch.nn.functional as F
 
 def mse(y_pred: torch.Tensor, y_true: torch.Tensor) -> torch.Tensor:
     #Среднеквадратичная ошибка: (1/n) * sum((y_pred - y_true)^2).
